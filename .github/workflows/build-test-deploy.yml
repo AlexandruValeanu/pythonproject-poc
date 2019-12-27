@@ -1,9 +1,7 @@
 name: Build, Test, Deploy
 
-# execute on any push or pull request involving master
+# execute on any push request involving master
 on:
-  pull_request:
-    branches: master
   push:
     branches: master
 
