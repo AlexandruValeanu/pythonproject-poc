@@ -24,14 +24,16 @@ here = path.abspath(path.dirname(__file__))
 with open(path.join(here, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
-directory = pathlib.Path(__file__).parent.resolve()
+# directory = pathlib.Path(__file__).parent.resolve()
     
 # version
-init_path = directory.joinpath('pythonproject-poc', '__init__.py')
-text = init_path.read_text(encoding='utf-8-sig')
-pattern = re.compile(r"^__version__ = ['\"]([^'\"]*)['\"]", re.MULTILINE)
-version = pattern.search(text).group(1)
-    
+# init_path = directory.joinpath('pythonproject-poc', '__init__.py')
+# text = init_path.read_text(encoding='utf-8-sig')
+# pattern = re.compile(r"^__version__ = ['\"]([^'\"]*)['\"]", re.MULTILINE)
+# version = pattern.search(text).group(1)
+
+version = "0.0.0";
+
 # Arguments marked as "Required" below must be included for upload to PyPI.
 # Fields marked as "Optional" may be commented out.
 
