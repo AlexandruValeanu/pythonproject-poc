@@ -8,9 +8,6 @@ https://github.com/AlexandruValeanu/pythonproject-poc
 # Always prefer setuptools over distutils
 from setuptools import setup, find_packages
 from os import path
-import itertools
-import pathlib
-import re
 
 # io.open is needed for projects that support Python 2.7
 # It ensures open() defaults to text mode with universal newlines,
@@ -24,7 +21,7 @@ here = path.abspath(path.dirname(__file__))
 with open(path.join(here, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
-version = "0.0.4";
+version = "0.0.5";
 
 # Arguments marked as "Required" below must be included for upload to PyPI.
 # Fields marked as "Optional" may be commented out.
