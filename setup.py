@@ -2,7 +2,7 @@
 
 See:
 https://packaging.python.org/guides/distributing-packages-using-setuptools/
-https://github.com/AlexandruValeanu/sampleproject-poc
+https://github.com/AlexandruValeanu/pythonproject-poc
 """
 
 # Always prefer setuptools over distutils
@@ -27,7 +27,7 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
 directory = pathlib.Path(__file__).parent.resolve()
     
 # version
-init_path = directory.joinpath('sampleproject-poc', '__init__.py')
+init_path = directory.joinpath('pythonproject-poc', '__init__.py')
 text = init_path.read_text(encoding='utf-8-sig')
 pattern = re.compile(r"^__version__ = ['\"]([^'\"]*)['\"]", re.MULTILINE)
 version = pattern.search(text).group(1)
@@ -40,14 +40,14 @@ setup(
     # package, this name will be registered for you. It will determine how
     # users can install this project, e.g.:
     #
-    # $ pip install sampleproject-poc
+    # $ pip install pythonproject-poc
     #
-    # And where it will live on PyPI: https://pypi.org/project/sampleproject-poc/
+    # And where it will live on PyPI: https://pypi.org/project/pythonproject-poc/
     #
     # There are some restrictions on what makes a valid project name
     # specification here:
     # https://packaging.python.org/specifications/core-metadata/#name
-    name="sampleproject-poc", # Replace with your own username
+    name="pythonproject-poc", # Replace with your own username
     
     # Versions should comply with PEP 440:
     # https://www.python.org/dev/peps/pep-0440/
@@ -88,7 +88,7 @@ setup(
     #
     # This field corresponds to the "Home-Page" metadata field:
     # https://packaging.python.org/specifications/core-metadata/#home-page-optional
-    url='https://github.com/AlexandruValeanu/sampleproject',  # Optional
+    url='https://github.com/AlexandruValeanu/pythonproject-poc',  # Optional
 
     # This should be your name or the name of the organization which owns the
     # project.
@@ -168,7 +168,7 @@ setup(
     # dependencies). Users will be able to install these using the "extras"
     # syntax, for example:
     #
-    #   $ pip install sampleproject[dev]
+    #   $ pip install pythonproject-poc[dev]
     #
     # Similar to `install_requires` above, these must be valid existing
     # projects.
@@ -216,9 +216,9 @@ setup(
     # maintainers, and where to support the project financially. The key is
     # what's used to render the link text on PyPI.
     project_urls={  # Optional
-        'Bug Reports': 'https://github.com/AlexandruValeanu/sampleproject/issues',
+        'Bug Reports': 'https://github.com/AlexandruValeanu/pythonproject-poc/issues',
         'Funding': 'https://donate.pypi.org',
         'Say Thanks!': 'http://saythanks.io/to/example',
-        'Source': 'https://github.com/AlexandruValeanu/sampleproject/',
+        'Source': 'https://github.com/AlexandruValeanu/pythonproject-poc/',
     },
 )
