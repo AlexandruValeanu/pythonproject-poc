@@ -13,7 +13,7 @@ jobs:
     # create a set of configurations of the virtual env used for the job
     strategy:
       matrix:
-        os: [ubuntu-latest]
+        os: [ubuntu-latest, windows-latest]
         python-version: [2.7, 3.6, 3.7, 3.8]
     # checkout the source code and setup Python (using the build matrix)
     steps:
