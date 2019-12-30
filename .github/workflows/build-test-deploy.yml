@@ -1,9 +1,9 @@
 name: Build, Test, Deploy
 
 # execute on any push request involving master
-on:
-  push:
-    branches: master
+#on:
+#  push:
+#    branches: master
 
 jobs:
   build-and-test:
